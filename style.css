@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --very-dark-blue: #0a0a23;
+  --white: #ffffff;
+  --red: #f20d09;
+  --light-blue: #00a8ff;
+}
+
+body {
+  background: linear-gradient(to right, #00152e, #003b6f, #005c8e);
+  text-align: center;
+  color: var(--white);
+
+
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+
+h1 {
+  margin: 15px 0 20px;
+  background:linear-gradient(90deg,#00eaff,#00a2ff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+
+
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  color: var(--very-dark-blue);
+  background-color: var(--light-blue);
+  background-image: linear-gradient(#00c6ff, #0082d6);
+  border-color: var(--light-blue);
+  border-width: 3px;
+}
+
+.btn:hover {
+  background-image: linear-gradient(#e56b14, #dc742a);
+}
+
+.rules-container {
+  padding: 10px 0;
+  width:500px;
+  margin: auto;
+  border-radius: 15px;
+  border: 5px solid var(--light-blue);
+  background-color: var(--white);
+  color: var(--very-dark-blue);
+}
+
+.rules-container ul {
+  list-style-type: none;
+}
+
+.rules-container p {
+  margin: 10px 0;
+}
+
+@media (min-width: 760px) {
+  .rules-container {
+    width: 60%;
+  }
+}
+
+@media(max-width: 468px){
+  .rules-container{
+    width:60%;
+  }
+}
+.score-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  font-size: 1.2rem;
+}
+
+.score {
+  font-weight: 500;
+}
+
+.results-container {
+  font-size: 1.3rem;
+  margin: 15px 0;
+}
+
+#winner-msg {
+  margin-top: 25px;
+}
+
+#reset-game-btn {
+  display: none;
+  margin: 20px auto;
+}
