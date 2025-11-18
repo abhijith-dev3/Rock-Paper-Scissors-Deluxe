@@ -1,5 +1,5 @@
 # Rock-Paper-Scissors Deluxe
-[DEMO]()
+[DEMO](https://abhijith-dev3.github.io/Rock-Paper-Scissors-Deluxe/)
 
 A clean, modern Rock–Paper–Scissors game built with **HTML**, **CSS**, and **JavaScript**.  
 Includes responsive layout, polished UI gradients, score tracking, and instant game results.
